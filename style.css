@@ -16,16 +16,16 @@
     height: 13em;
     border-radius: 50%;
     background: linear-gradient(-25deg, #d84869, #f46641);
-    top: 5%;
-    left: 30%;
+    top: 10%;
+    left: 35%;
     box-shadow: 0 0 50px #d84869;
     animation: circle1Animate 15s infinite;
   }
   
   @keyframes circle1Animate {
     50% {
-      left: 33%;
-      top: 4%;
+      left: 37%;
+      top: 14%;
       scale: 1.11;
     }
   }
@@ -45,7 +45,7 @@
   @keyframes circle2Animate {
     50% {
       bottom: 6%;
-      right: 31%;
+      right: 35%;
     }
   }
   
