@@ -227,13 +227,13 @@
     color: #fff;
   }
   
-  #whatsapp {
-    color: #2fe664;
-    border: 1px solid #2fe664;
+  #github {
+    color: #f7f7f7;
+    border: 1px solid #ffffff;
   }
-  #whatsapp:hover {
-    background-color: #2fe664;
-    color: #fff;
+  #github:hover {
+    background-color: #ffffff;
+    color: #060000;
   }
   
   #telegram {
