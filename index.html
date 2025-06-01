@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- wrapper -->
+
+   <div class="wrapper">
+    <!-- circles  -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="container">
+      <!-- Image -->
+      <div><img src="./images/myphoto.png" alt="mypic" /></div>
+
+      <!-- Heading -->
+      <div class="userName">
+        <h2>Nikhil Yadav</h2>
+      </div>
+
+      <!-- designation  -->
+      <div class="designation">
+        <h3>Frontend Passion, MERN Mission</h3>
+      </div>
+
+      <!-- Button Group  -->
+      <div class="btnGroup">
+        <button class="btn btnShare" onclick="openModal()">
+          <i class="fa-solid fa-share"></i>
+          <div> <h3>Let's Connect !</h3></div>
+        </button>
+
+        <button class="btn btnFollow">
+          <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nikhilyad566"><h3>Follow Me</h3></a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component  -->
+  <div class="modal">
+    <div class="modalHeader">
+      <h1>👍Let's Connect!</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+    <div>
+      <h3>Stay Connected 🤝</h3>
+      <div class="iconContainer">
+        <a
+          href="https://www.facebook.com/nikhilyad566/"
+          class="icon"
+          id="facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/YadavNikhil566" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/nikhilyad566/"
+          class="icon"
+          id="instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/nikhilyadav566" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.youtube.com/@CodeWizNik" class="icon" id="youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Overlay  -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+     <!--Font Awesome-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
