@@ -190,17 +190,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.close-container:hover {
+.close-container{
   background-color: red; /* Background turns red on hover */
   transform: scale(1.1); /* Slight grow effect on hover */
 }
 
-.close-container i {
-  font-size: 20px;       /* Bigger icon size */
-  color: #fff;           /* Icon color white (change if needed) */
-}
 
-  
   .iconContainer {
     margin-top: 20px;
     display: flex;
