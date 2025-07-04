@@ -92,15 +92,14 @@
     font-size: 2rem;
     text-align: center;
   }
-  
+
   .designation #typing {
   color: #ffffff;
   text-shadow: 0 0 5px #38bdf8, 0 0 15px #38bdf8;
   border-right: 2px solid #ffffff;
   animation: blink 0.7s infinite;
+  font-size: 19px;
 }
-
-  
 
   @keyframes blink {
   0%, 100% { border-color: transparent; }
@@ -180,6 +179,27 @@
     font-size: 30px;
     cursor: pointer;
   }
+
+  .close-container {
+  width: 25px;        /* Set width */
+  height: 25px;       /* Set height */
+  display: flex;      /* Center icon */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-container:hover {
+  background-color: red; /* Background turns red on hover */
+  transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+.close-container i {
+  font-size: 20px;       /* Bigger icon size */
+  color: #fff;           /* Icon color white (change if needed) */
+}
+
   
   .iconContainer {
     margin-top: 20px;
