@@ -93,9 +93,18 @@
     text-align: center;
   }
   
-  .designation h3 {
-    text-align: center;
-    color: #ffffff85;
+  .designation #typing {
+  color: #ffffff;
+  text-shadow: 0 0 5px #38bdf8, 0 0 15px #38bdf8;
+  border-right: 2px solid #ffffff;
+  animation: blink 0.7s infinite;
+}
+
+  
+
+  @keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
   }
   
   .btnGroup {
@@ -264,7 +273,29 @@
     opacity: 1;
     pointer-events: initial;
   }
- 
+
+  .copyBtn {
+  display: block;
+  margin: 1rem auto 0;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #ffffffaa;
+  box-shadow: 0 0 10px #ffffff33 inset;
+}
+
+.copyBtn:hover {
+  background: #ffffff;
+  color: #000000;
+  text-shadow: none;
+  box-shadow: 0 0 20px #ffffff88;
+}
+
   /* To make responsive */
  
 @media (max-width:280px){
