@@ -15,7 +15,7 @@ const closeModal = () => {
 };
 
 const copyProfileLink = () => {
-  navigator.clipboard.writeText("https://profile-codewiznik.onrender.com");
+  navigator.clipboard.writeText("https://profile-6u5z.onrender.com/");
   alert("Profile link copied to clipboard!");
 };
 
