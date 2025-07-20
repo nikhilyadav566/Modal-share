@@ -482,10 +482,36 @@
     padding: 15px;
   }
 
-  .modal {
+  /* .modal {
     width: 260px;
   
-  }
+  } */
+   /* Only updated parts shown */
+
+.designation #typing {
+  color: #ffffff;
+  text-shadow: 0 0 5px #38bdf8, 0 0 15px #38bdf8;
+  border-right: 2px solid #38bdf8;
+  animation: blink 0.8s steps(1) infinite;
+  font-size: 19px;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #38bdf8; }
+}
+
+.modal {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.modal.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
 }
 
 @media (min-width:380px) and (max-width:600px){

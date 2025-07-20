@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ✅ START SEO META TAGS -->
-<title>CodeWizNik - Nikhil Yadav | Developer Profile</title>
-<link rel="icon" href="favicon.png" type="image/png">  
-<meta name="description" content="Hey there! I'm CodeWizNik (Nikhil Yadav) — a MERN Stack Developer and YouTube content creator. This is my official profile page.">
-<meta name="keywords" content="CodeWizNik, Nikhil Yadav, Developer, Profile, GitHub, YouTube, MERN, Tech Creator">
-<meta name="author" content="Nikhil Yadav">
-<meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="5j8UNy5oixJs8k0dSFyylPtBCfvggjc9CihF2Hgym7E" />
-<meta property="og:title" content="CodeWizNik - Developer Profile" />
-<meta property="og:description" content="I'm Nikhil Yadav (CodeWizNik) — Web Developer & YouTuber. This is my profile." />
-<meta property="og:url" content="https://codewiznik-profile.onrender.com" />
-<meta property="og:image" content="https://codewiznik-profile.onrender.com/banner.png" />
-<link rel="canonical" href="https://codewiznik-profile.onrender.com" />
-<!-- ✅ END SEO META TAGS -->
-    <link rel="stylesheet" href="style.css">
+  <title>CodeWizNik - Nikhil Yadav | Developer Profile</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta name="description" content="Hey there! I'm CodeWizNik (Nikhil Yadav) — a MERN Stack Developer and YouTube content creator. This is my official profile page." />
+  <meta name="keywords" content="CodeWizNik, Nikhil Yadav, Developer, Profile, GitHub, YouTube, MERN, Tech Creator" />
+  <meta name="author" content="Nikhil Yadav" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="CodeWizNik - Developer Profile" />
+  <meta property="og:description" content="I'm Nikhil Yadav (CodeWizNik) — Web Developer & YouTuber. This is my profile." />
+  <meta property="og:url" content="https://codewiznik-profile.onrender.com" />
+  <meta property="og:image" content="https://codewiznik-profile.onrender.com/banner.png" />
+  <link rel="canonical" href="https://codewiznik-profile.onrender.com" />
+  <!-- ✅ END SEO META TAGS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-   <!-- wrapper -->
-
-   <div class="wrapper">
-    <!-- circles  -->
+  <div class="wrapper">
+    <!-- Circles -->
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="container">
@@ -36,17 +32,16 @@
         <h2>Nikhil Yadav</h2>
       </div>
 
-      <!-- designation  -->
+      <!-- Designation -->
       <div class="designation">
-        <!-- <h3>Frontend Passion, MERN Mission</h3> -->
         <span id="typing"></span>
       </div>
 
-      <!-- Button Group  -->
+      <!-- Button Group -->
       <div class="btnGroup">
         <button class="btn btnShare" onclick="openModal()">
           <i class="fa-solid fa-share"></i>
-          <div> <h3>Let's Connect !</h3></div>
+          <div><h3>Let's Connect!</h3></div>
         </button>
 
         <button class="btn btnFollow">
@@ -56,68 +51,38 @@
     </div>
   </div>
 
-  <!-- Modal Component  -->
+  <!-- Modal Component -->
   <div class="modal">
     <div class="modalHeader">
-      <h1>👍Let's Connect!</h1>
+      <h1>👍 Let's Connect!</h1>
       <div class="close-container">
-        <i  onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
       </div>
     </div>
-
     <div>
       <h3>Stay Connected 🤝</h3>
       <div class="iconContainer">
-        <a
-          href="https://www.facebook.com/nikhilyad566/"
-          class="icon"
-          id="facebook"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/nikhilyad566/"
-          class="icon"
-          id="instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://x.com/YadavNikhil566" class="icon" id="twitter">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://github.com/nikhilyadav566" class="icon" id="github">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.youtube.com/@CodeWizNik" class="icon" id="youtube">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
+        <a href="https://www.facebook.com/nikhilyad566/" class="icon" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/nikhilyad566/" class="icon" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/YadavNikhil566" class="icon" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/nikhilyadav566" class="icon" id="github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@CodeWizNik" class="icon" id="youtube"><i class="fa-brands fa-youtube"></i></a>
       </div>
-        <button class="btn copyBtn" onclick="copyProfileLink()">📋 Copy Profile Link</button>
+      <button class="btn copyBtn" onclick="copyProfileLink()">📋 Copy Profile Link</button>
     </div>
   </div>
 
-    <!-- Overlay  -->
-    <div class="overlay" onclick="closeModal()"></div>
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
 
-     <!--Font Awesome-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
-     <script src="script.js"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
-    <!--Stylish Footer-->
-    <footer style="
-  background-color: #111827;
-  color: #9CA3AF;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  font-family: 'Segoe UI', sans-serif;
-">
-  © 2025 <a href="https://www.youtube.com/results?search_query=codewiznik" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">
-    CodeWizNik
-  </a>. All rights reserved.
-  <br>
-  <span style="font-size: 12px; color: #6B7280;">Crafted with ❤️ for developers & learners</span>
-</footer>
-
+  <!-- Stylish Footer -->
+  <footer style="background-color: #111827; color: #9CA3AF; text-align: center; padding: 20px; font-size: 14px; font-family: 'Segoe UI', sans-serif;">
+    © 2025 <a href="https://www.youtube.com/results?search_query=codewiznik" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">CodeWizNik</a>. All rights reserved.<br>
+    <span style="font-size: 12px; color: #6B7280;">Crafted with ❤️ for developers & learners</span>
+  </footer>
 </body>
 </html>

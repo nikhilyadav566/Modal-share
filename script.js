@@ -1,47 +1,48 @@
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 
-//   Modal open function
+// Open Modal
 const openModal = () => {
-  console.log("Modal is Open");
   modal.classList.add("active");
   overlay.classList.add("overlayActive");
 };
 
-// Modal close function
+// Close Modal
 const closeModal = () => {
   modal.classList.remove("active");
   overlay.classList.remove("overlayActive");
 };
 
+// Copy Profile Link
 const copyProfileLink = () => {
-  navigator.clipboard.writeText("https://codewiznik-profile.onrender.com/");
-  alert("Profile link copied to clipboard!");
+  navigator.clipboard.writeText("https://codewiznik-profile.onrender.com/")
+    .then(() => alert("✅ Profile link copied to clipboard!"))
+    .catch(err => console.error("Clipboard copy failed: ", err));
 };
 
-
-//   Typing  Element
-
+// Typing Effect
 const typingElement = document.getElementById("typing");
-const phrases = ["Frontend Developer", "MERN Stack Learner", "Tech YouTuber"];
-let i = 0, j = 0, currentPhrase = [], isDeleting = false;
+const phrases = [
+  "MERN Dev 🚀",
+  "YouTuber 🎥",
+  "CodeWizNik ✨"
+];
+let i = 0, j = 0, isDeleting = false, currentText = "";
 
-function loop() {
-  typingElement.textContent = currentPhrase.join("");
+const typeLoop = () => {
+  const fullPhrase = phrases[i];
 
-  if (!isDeleting && j <= phrases[i].length) {
-    currentPhrase.push(phrases[i][j]);
-    j++;
+  if (isDeleting) {
+    currentText = fullPhrase.substring(0, j--);
+  } else {
+    currentText = fullPhrase.substring(0, j++);
   }
 
-  if (isDeleting && j > 0) {
-    currentPhrase.pop();
-    j--;
-  }
+  typingElement.textContent = currentText;
 
-  if (j === phrases[i].length) {
+  if (!isDeleting && j === fullPhrase.length + 1) {
     isDeleting = true;
-    setTimeout(loop, 1000);
+    setTimeout(typeLoop, 1500); // Pause after typing
     return;
   }
 
@@ -50,6 +51,8 @@ function loop() {
     i = (i + 1) % phrases.length;
   }
 
-  setTimeout(loop, isDeleting ? 50 : 150);
-}
-loop();
+  const speed = isDeleting ? 50 : 150;
+  setTimeout(typeLoop, speed);
+};
+
+document.addEventListener("DOMContentLoaded", typeLoop);
