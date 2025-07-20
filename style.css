@@ -88,10 +88,24 @@
     height: 100%;
   }
   
-  .userName h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
+  .userName {
+  height: 50px; /* fixed height for username */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.designation {
+  min-height: 30px; /* fixed space for typing text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   .designation #typing {
   color: #ffffff;
