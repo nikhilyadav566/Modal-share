@@ -445,7 +445,7 @@
   }
 }
 
-@media (min-width:340px) and (max-width:380px){
+@media (min-width:340px) and (max-width:385px){
   .circle1 {
     width: 9em;
     height: 9em;
@@ -483,7 +483,7 @@
   }
 
   .modal {
-    width: 260px;
+    width: 240px;
   
   }
 
@@ -513,7 +513,7 @@
 
 }
 
-@media (min-width:380px) and (max-width:600px){
+@media (min-width:385px) and (max-width:600px){
   .circle1 {
     width: 10em;
     height: 10em;
